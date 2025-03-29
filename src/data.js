@@ -12,9 +12,15 @@ import Skill5 from '../src/assets/img/skills/skill5.png';
 import Skill6 from '../src/assets/img/skills/skill6.png';
 
 // import team images
-import TeamMember1 from '../src/assets/img/lawyer1.png';
-import TeamMember2 from '../src/assets/img/lawyer2.png';
-import TeamMember3 from '../src/assets/img/lawyer3.png';
+import Lawyer1 from './assets/img/lawyer1.png';
+import Lawyer2 from './assets/img/lawyer2.png';
+import Lawyer3 from './assets/img/lawyer3.png';
+
+
+import TeamMember1 from './assets/img/lawyer1.png';
+import TeamMember2 from './assets/img/lawyer2.png';
+import TeamMember3 from './assets/img/lawyer3.png';
+
 
 // import social icons
 import FacebookIcon from '../src/assets/img/social/facebook.png';
@@ -22,23 +28,24 @@ import TwitterIcon from '../src/assets/img/social/twitter.png';
 import InstagramIcon from '../src/assets/img/social/instagram.png';
 import YoutubeIcon from '../src/assets/img/social/youtube.png';
 import PinterestIcon from '../src/assets/img/social/pinterest.png';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaPinterest } from "react-icons/fa";
 
 // navigation data
 export const navigation = [
   {
-    name: 'Home',
+    name: 'Ana Sayfa',
     href: 'home',
   },
   {
-    name: 'What we do',
+    name: 'Hakkımızda',
     href: 'skills',
   },
   {
-    name: 'Our team',
+    name: 'Hizmetlerimiz',
     href: 'team',
   },
   {
-    name: 'Contact us',
+    name: 'Bize Ulaşın',
     href: 'contact',
   },
 ];
@@ -46,20 +53,20 @@ export const navigation = [
 // testimonials data
 export const testimonials = [
   {
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
-    name: 'Jane Cooper',
+    text: 'Danışmanlık hizmetlerinden çok memnun kaldım. İşlerimizi hızlı ve güvenilir bir şekilde hallettiler.',
+    name: 'Kemal Güney',
     image: ProfilePhoto1,
     position: 'Web Developer',
   },
   {
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
-    name: 'Theresa Webb',
+    text: 'Avukatımızın hızlı ve güvenilir hizmetlerinden çok memnun kaldık. Herkese tavsiye ederim.',
+    name: 'Halil Keleş',
     image: ProfilePhoto2,
     position: 'Web Designer',
   },
   {
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!',
-    name: 'Kathryn Murphy',
+    text: 'Dava sürecimizde bize çok yardımcı oldular. Herkese tavsiye ederim.',
+    name: 'Emre Kaan Şensoy',
     image: ProfilePhoto3,
     position: 'UI/UX Designer',
   },
@@ -69,69 +76,70 @@ export const testimonials = [
 export const skills = [
   {
     icon: Skill1,
-    title: 'Corruption',
+    title: 'Yolsuzluk',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Yolsuzlukla ilgili davalar ve hukuki süreçlerde müvekkillerimizi en iyi şekilde temsil ediyor, adaletin sağlanması için hukuki destek sunuyoruz.',
   },
   {
     icon: Skill2,
-    title: 'Employment',
+    title: 'İş Hukuku',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Çalışan ve işveren arasındaki hukuki ilişkileri düzenleyen iş hukuku kapsamında işe iade davaları, tazminat, fazla mesai alacakları gibi konularda danışmanlık veriyoruz.',
   },
   {
     icon: Skill3,
-    title: 'Real Estate',
+    title: 'Gayrimenkul Hukuku',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Tapu işlemleri, kira sözleşmeleri, taşınmaz alım-satımı ve kat mülkiyeti gibi gayrimenkulle ilgili tüm hukuki işlemlerde yanınızdayız.',
   },
   {
     icon: Skill4,
-    title: 'Taxes',
+    title: 'Vergi Hukuku',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Vergi yükümlülükleri, vergi cezaları, vergi yapılandırmaları ve mali incelemelerde hukuki danışmanlık ve savunma hizmetleri sunuyoruz.',
   },
   {
     icon: Skill5,
-    title: 'Corporate',
+    title: 'Şirketler Hukuku',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Şirket kuruluşu, ortaklık sözleşmeleri, birleşme ve devralmalar gibi ticari faaliyetlerinizde hukuki danışmanlık sağlıyoruz.',
   },
   {
     icon: Skill6,
-    title: 'Banking',
+    title: 'Banka ve Finans Hukuku',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
+      'Bankacılık işlemleri, kredi sözleşmeleri, icra takipleri ve finansal anlaşmalar konusunda hukuki destek sunuyoruz.',
   },
 ];
+
 
 // team data
 export const team = [
   {
     image: TeamMember1,
-    name: 'Jane William',
+    name: ' Ahmet Yılmaz',
     position: 'Band & Financial Lawyer',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
   },
   {
     image: TeamMember2,
-    name: 'Andrea Collins',
+    name: ' Ayşe Kaya',
     position: 'Family Lawyer',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
   },
   {
     image: TeamMember3,
-    name: 'John Smith',
-    position: 'Business Lawyer',
+    name: ' Mehmet Demir',
+    position: ' Criminal Lawyer',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
   },
 ];
 
 // social data
-export const social = [
+/*export const social = [
   {
     icon: FacebookIcon,
   },
@@ -146,5 +154,32 @@ export const social = [
   },
   {
     icon: PinterestIcon,
+  },
+];*/
+
+
+
+
+
+export const social = [
+  {
+    icon: <FaFacebook />,
+    url: "https://www.facebook.com/profiliniz",
+  },
+  {
+    icon: <FaTwitter />,
+    url: "https://x.com/gdk_vlkn",
+  },
+  {
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/gdk_vlkn/?next=%2F",
+  },
+  {
+    icon: <FaYoutube />,
+    url: "https://www.youtube.com/profiliniz",
+  },
+  {
+    icon: <FaPinterest />,
+    url: "https://www.pinterest.com/profiliniz",
   },
 ];
